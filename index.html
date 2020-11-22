@@ -34,28 +34,75 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/index.css" />
-    <title>MERGED</title>
+    <title>MOVIE STAR</title>
   </head>
   <body>
-    
-    
-    
+    <header>
+      <div class="container header__contact text-right">
+        <i class="fa fa-phone"></i>
+        <span class="mx-2 pr-2 border-right">0123456789</span>
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="container">
+        <nav
+          id="navbar"
+          class="navbar navbar__config navbar-expand-lg navbar-light"
+        >
+          <a class="navbar-brand py-0" href="#">
+            <img src="./img/logo.svg" alt="movie star logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggler"
+            aria-controls="navbarToggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div
+            class="navbar__config collapse navbar-collapse"
+            id="navbarToggler"
+          >
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">what's on</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">shortcodes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">sign in</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div id="top-carousel"></div>
+    <div id="showing"></div>
+    <div id="schedule"></div>
+    <div id="coming"></div>
+    <div id="contact"></div>
+    <footer></footer>
 
-
- 
-  
-
-
-
-
-    <!-- BACK TO TOP -->
-    <a
-
+    <!-- BACK TO TOP button-->
+    <!-- <a
       href="#nav"
       class="back-to-top cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
       ><i class="fa fa-arrow-circle-up"></i></i
-    ></a>
+    ></a> -->
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <script
@@ -76,7 +123,6 @@
 
     <!-- OWL CAROUSEL JS -->
     <script src="./js/owl.carousel.min.js"></script>
-
 
     <!-- BACK TO TOP JS -->
     <script src="./js/util.js"></script>
