@@ -166,6 +166,153 @@ header {
 }
 /* CAROUSEL END */
 
+/* SHOWING MOVIE START */
+.section-title {
+  color: var(--primary-color);
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  width: 180px;
+  height: 3px;
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+
+.movie__item {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie__detail {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scale(0.8);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.movie__detail i {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  line-height: 80px;
+  cursor: pointer;
+}
+
+.movie__detail a {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.movie__detail span {
+  font-size: 16px;
+}
+
+.movie__overlay {
+  position: absolute;
+  top: 0;
+  left: -400%;
+  transform: skewX(45deg);
+  width: 800px;
+  height: 100%;
+  background: linear-gradient(to bottom, #fbbd61, #ec7532);
+  transition: all 0.5s;
+}
+
+.movie__item:hover .movie__overlay {
+  left: -100%;
+}
+
+.movie__item:hover .movie__detail {
+  transform: translateY(-50%) scale(1);
+  opacity: 1;
+}
+
+.movie__name {
+  font-size: 18px;
+}
+
+.movie__star {
+  color: var(--secondary-color);
+}
+
+/* SHOWING MOVIE END */
+
+/* SHOWTIME START */
+.showtime .nav-tabs .nav-link {
+  position: relative;
+  color: #4a4a4a;
+  padding: 10px 30px;
+}
+.showtime .nav-tabs .nav-link:before {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all 0.5s;
+}
+.showtime .nav-tabs .nav-link.active,
+.showtime .nav-tabs .nav-link:hover {
+  /* border-color: none; */
+}
+.showtime .nav-tabs .nav-link.active:before,
+.showtime .nav-tabs .nav-link:hover:before {
+  width: 100%;
+}
+
+.showtime__movie img {
+  border-radius: 10px;
+}
+.showtime__list {
+  color: #717171;
+}
+
+.showtime__detail > span {
+  font-size: 14px;
+  color: #ec7532;
+  letter-spacing: 2px;
+}
+.showtime__detail > h1 {
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.showtime__detail > p {
+  font-size: 16px;
+}
+.showtime__detail > a {
+  font-size: 12px;
+  color: #ec7532;
+  letter-spacing: 3px;
+}
+.showtime__list i,
+.showtime__list span {
+  font-size: 14px;
+}
+.showtime__length span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+}
+
+/* SHOWTIME END */
 /* MEDIA QUERIES */
 
 /* // Small devices (landscape phones, 576px and up) */
