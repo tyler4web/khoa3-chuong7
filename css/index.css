@@ -115,6 +115,22 @@ header {
   padding-right: 20%;
 }
 
+#top-carousel .carousel-item {
+  height: 800px;
+}
+
+#top-carousel .item-1 {
+  background: url(../img/hero-1.jpg) no-repeat center center;
+  background-size: cover;
+}
+#top-carousel .item-2 {
+  background: url(../img/hero-2.jpg) no-repeat center center;
+  background-size: cover;
+}
+#top-carousel .item-3 {
+  background: url(../img/hero-3.jpg) no-repeat center center;
+  background-size: cover;
+}
 .carousel-caption__config span {
   color: #fbbd61;
   font-size: 14px;
@@ -312,7 +328,111 @@ header {
   line-height: 35px;
 }
 
-/* SHOWTIME END */
+/* COMMING CSS */
+.coming {
+  background-color: #000;
+}
+.coming__bg {
+  padding: 80px 0;
+  background: url("../img/slide-3.png") no-repeat center center;
+  background-size: cover;
+}
+.coming__bg .section-title {
+  color: white;
+}
+.coming__detail > span {
+  font-size: 14px;
+  color: #ec7532;
+}
+.coming__detail h1 {
+  font-weight: 300;
+  font-size: 34px;
+}
+.coming__detail .fa-star {
+  font-size: 14px;
+  color: #fbbd61;
+}
+.coming__date {
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.coming__detail a {
+  color: #ec7532;
+  letter-spacing: 3px;
+}
+.coming__trailer {
+  position: relative;
+}
+.coming__trailer .video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: #ec7532;
+  transition: all 0.2s;
+  font-size: 20px;
+}
+.coming__trailer .video-play:hover {
+  transform: translate(-50%, -50%) scale(0.9);
+}
+.coming__item {
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+.coming__item:hover,
+.coming__item.active {
+  opacity: 1;
+}
+.coming__item img {
+  border-radius: 10px;
+}
+.coming__item span {
+  font-size: 14px;
+  opacity: 0.75;
+}
+.coming__list {
+  padding: 40px 0;
+}
+/* END COMMING CSS */
+/* CONTACT CSS */
+.contact__content {
+  padding: 50px 0;
+}
+.contact__content p {
+  font-size: 23px;
+}
+.contact__content h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ec7532;
+}
+/* END CONTACT CSS */
+
+/* FOOTER CSS */
+.footer {
+  background-color: #101010;
+  padding: 50px 0;
+}
+.footer h3 {
+  color: #ec7532;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.footer ul li {
+  margin-bottom: 10px;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.footer ul li a:hover {
+  color: #ec7532;
+}
+.copy-right {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
 /* MEDIA QUERIES */
 
 /* // Small devices (landscape phones, 576px and up) */
