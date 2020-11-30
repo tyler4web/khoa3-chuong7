@@ -219,28 +219,28 @@ header {
 }
 
 .movie__detail i {
-  width: 80px;
-  height: 80px;
-  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 14px;
   border-radius: 50%;
   border: 2px solid white;
-  line-height: 80px;
+  line-height: 60px;
   cursor: pointer;
 }
 
 .movie__detail a {
-  font-size: 14px;
+  font-size: 10px;
   letter-spacing: 2px;
 }
 
 .movie__detail span {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .movie__overlay {
   position: absolute;
   top: 0;
-  left: -400%;
+  left: -1000%;
   transform: skewX(45deg);
   width: 800px;
   height: 100%;
@@ -436,16 +436,69 @@ header {
 /* MEDIA QUERIES */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) {
-  ...;
+@media only screen and (max-width: 576px) {
+  .movie__overlay {
+    left: -1000%;
+    width: 1200px;
+  }
+}
+
+.movie__item:hover .movie__overlay {
+  left: -320px;
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  ...;
+@media only screen and (max-width: 768px) {
+  .movie__overlay {
+    left: -900%;
+  }
+  .movie__detail i {
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    border-radius: 50%;
+    border: 2px solid white;
+    line-height: 55px;
+    cursor: pointer;
+  }
+
+  .movie__detail a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .movie__detail span {
+    font-size: 16px;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  ...;
+  /* .movie__detail {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) scale(0.8);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .movie__detail i {
+    width: 80px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid white;
+    line-height: 75px;
+    cursor: pointer;
+  } */
+
+  .movie__detail a {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .movie__detail span {
+    font-size: 16px;
+  }
 }
